@@ -11,4 +11,7 @@ Angular v1.X module that keeps track of the current screen size and bootstrap's 
 </pre>
 </div>
 <p>Configuration (optional):</p>
-<pre>bsScreenSize.config({debounce:100});</pre>
+<pre>
+// default debounce rate
+bsScreenSize.config({debounce:100});
+</pre>
