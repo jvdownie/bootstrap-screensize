@@ -100,22 +100,22 @@
     }
 
     function isScreenXs() {
-        var width = getSize("width");
+        var width = getSize("Width");
         return width <= screenSizes.sm;
     }
 
     function isScreenSm() {
-        var width = getSize("width");
+        var width = getSize("Width");
         return !!(width >= screenSizes.sm && width < screenSizes.md);
     }
 
     function isScreenMd() {
-        var width = getSize("width");
+        var width = getSize("Width");
         return !!(width >= screenSizes.md && width < screenSizes.lg);
     }
 
     function isScreenLg() {
-        var width = getSize("width");
+        var width = getSize("Width");
         return width >= screenSizes.lg;
     }
 
@@ -131,7 +131,7 @@
     }
 
     function currentWidth() {
-        return getSize("width");
+        return getSize("Width");
     }
 
     function currentHeight() {
