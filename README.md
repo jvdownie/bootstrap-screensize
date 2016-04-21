@@ -33,14 +33,3 @@ angular
     
   });
 </pre>
-<pre>
-
-  // use it in angular expressions
-  {{ (bsScreenSize.state == 'lg' ) ? '<h1>Title</h1>' : '<h3>Title</h3>'  }}
-  <ANY ng-show="bsScreenSize.state == 'lg'"></ANY>
-  <ANY ng-show="bsScreenSize.width >= 1200"></ANY>
-  
-  // or styling elements
-  <ANY ng-class="{'some-class': bsScreenSize.state == 'lg'}"></ANY>
-  <ANY ng-style="{'height': (bsScreenSize.height - 30) + 'px',  'margin-top': (bsScreenSize.state == 'xs')?'0':'10px' }"></ANY>
-</pre>
