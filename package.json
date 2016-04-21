@@ -27,5 +27,9 @@
   "homepage": "https://github.com/jvdownie/bootstrap-screensize#readme",
   "dependencies": {
     "angular-debounce": "^1.0.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
   }
 }
