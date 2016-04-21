@@ -15,7 +15,32 @@ Angular v1.X module that keeps track of the current screen size and bootstrap's 
 angular
   .module('app', ['bs.screenSize'])
   .controller('testCtrl', function(bsScreenSize){
+    
     // default debounce rate
     bsScreenSize.config({debounce:100});
+    
   });
+</pre>
+<p>Use it:</p>
+<pre>
+angular
+  .module('app', ['bs.screenSize'])
+  .controller('testCtrl', function(bsScreenSize){
+  
+    bsScreenSize.state; // 'xs','sm','md' or 'lg'
+    bsScreenSize.width; // current screen width. e.g. 1200
+    bsScreenSize.height; // current screen height. e.g. 800
+    
+  });
+</pre>
+<pre>
+
+  // use it in angular expressions
+  {{ (bsScreenSize.state == 'lg' ) ? '<h1>Title</h1>' : '<h3>Title</h3>'  }}
+  <ANY ng-show="bsScreenSize.state == 'lg'"></ANY>
+  <ANY ng-show="bsScreenSize.width >= 1200"></ANY>
+  
+  // or styling elements
+  <ANY ng-class="{'some-class': bsScreenSize.state == 'lg'}"></ANY>
+  <ANY ng-style="{'height': (bsScreenSize.height - 30) + 'px',  'margin-top': (bsScreenSize.state == 'xs')?'0':'10px' }"></ANY>
 </pre>
