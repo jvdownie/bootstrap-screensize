@@ -1,5 +1,5 @@
 # bootstrap-screensize
-Angular module that keeps track of the current screen size and bootstrap's device size
+Angular v1.X module that keeps track of the current screen size and bootstrap's device size
 <h2>Usage</h2>
 <p>Add bootstrap-screensize to your project:</p>
 <pre>bower i bootstrap-screensize --save</pre>
