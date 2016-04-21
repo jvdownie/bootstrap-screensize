@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-screensize",
   "email": "jld.downie@gmail.com",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular v1.X module for screen width/height and Bootstrap's breakpoints",
   "main": "main.js",
   "scripts": {
