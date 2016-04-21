@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-screensize",
+  "description": "Angular module that keeps track of the current screen size and bootstrap's device size",
+  "main": "main.js",
+  "authors": [
+    "Joe Downie"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "screen",
+    "size",
+    "screensize",
+    "checker"
+  ],
+  "homepage": "https://github.com/jvdownie/bootstrap-screensize",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-debounce": "^1.0.3"
+  }
+}
