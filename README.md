@@ -1,5 +1,7 @@
 # bootstrap-screensize
-Angular v1.X module for screen width/height and Bootstrap's breakpoints 
+Angular v1.X module for screen width/height and Bootstrap's breakpoints.
+Updates the properties on screen resize.
+Configure the debounce rate for performance requirements.
 <h2>Usage</h2>
 <p>Add bootstrap-screensize to your project:</p>
 <pre>bower i bootstrap-screensize --save</pre>
@@ -21,7 +23,7 @@ angular
     
   });
 </pre>
-<p>Use it:</p>
+<p>Use it in modules:</p>
 <pre>
 angular
   .module('app', ['bs.screenSize'])
@@ -32,4 +34,12 @@ angular
     bsScreenSize.height; // current screen height. e.g. 800
     
   });
+</pre>
+
+<p>Also available to views:</p>
+<pre>
+    &lt;ANY ng-show="bsScreenSize.state == 'lg'"&gt;&lt;/ANY&gt;
+    &lt;ANY ng-show="bsScreenSize.width >= 1200"&gt;&lt;/ANY&gt;
+    &lt;ANY ng-class="{'some-class': bsScreenSize.state == 'lg'}"&gt;&lt;/ANY&gt;
+    &lt;ANY ng-style="{'height': (bsScreenSize.height - 200) + 'px',  'margin-top': (bsScreenSize.state == 'xs')?'0':'10px' }"&gt;&lt;/ANY&gt;
 </pre>
