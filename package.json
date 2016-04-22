@@ -17,7 +17,8 @@
     "screen",
     "size",
     "screensize",
-    "checker"
+    "checker",
+    "window"
   ],
   "author": "Joe Downie",
   "license": "MIT",
