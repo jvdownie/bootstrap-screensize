@@ -13,7 +13,8 @@
     "screen",
     "size",
     "screensize",
-    "checker"
+    "checker",
+    "window"
   ],
   "homepage": "https://github.com/jvdownie/bootstrap-screensize",
   "ignore": [
