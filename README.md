@@ -1,6 +1,8 @@
 # bootstrap-screensize
 Angular v1.X module for screen width/height and Bootstrap's breakpoints.
+<br>
 Updates the properties on screen resize.
+<br>
 Configure the debounce rate for performance requirements.
 <h2>Usage</h2>
 <p>Add bootstrap-screensize to your project:</p>
@@ -25,18 +27,33 @@ angular
 </pre>
 <p>Use it in modules:</p>
 <pre>
+
 angular
   .module('app', ['bs.screenSize'])
-  .controller('testCtrl', function(bsScreenSize){
-  
+  .controller('testCtrl', function($rootScope, bsScreenSize){ // bsScreenSize is an optional dependency
+
+    // responsive properties, updates on screen resize
     bsScreenSize.state; // 'xs','sm','md' or 'lg'
-    bsScreenSize.width; // current screen width. e.g. 1200
-    bsScreenSize.height; // current screen height. e.g. 800
+    bsScreenSize.width; // 1200
+    bsScreenSize.height; // 800
+    // static functions
+    bsScreenSize.isScreenXs(); // bool
+    bsScreenSize.isScreenSm(); // bool
+    bsScreenSize.isScreenMd(); // bool
+    bsScreenSize.isScreenLg(); // bool
+    var state = bsScreenSize.currentState(); // 'xs','sm','md' or 'lg'
+    var width = bsScreenSize.currentWidth(); // 1200
+    var height = bsScreenSize.currentHeight(); // 800
+
+    // also available in the $rootScope for convenience
+    $rootScope.bsScreenSize.state; // 'xs','sm','md' or 'lg'
+    $rootScope.bsScreenSize.width; // 1200
+    $rootScope.bsScreenSize.height; // 800
     
   });
 </pre>
 
-<p>Also available to views:</p>
+<p>Use it in views:</p>
 <pre>
     &lt;ANY ng-show="bsScreenSize.state == 'lg'"&gt;&lt;/ANY&gt;
     &lt;ANY ng-show="bsScreenSize.width >= 1200"&gt;&lt;/ANY&gt;
