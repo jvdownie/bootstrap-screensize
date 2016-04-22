@@ -58,5 +58,5 @@ angular
     &lt;ANY ng-show="bsScreenSize.state == 'lg'"&gt;&lt;/ANY&gt;
     &lt;ANY ng-show="bsScreenSize.width >= 1200"&gt;&lt;/ANY&gt;
     &lt;ANY ng-class="{'some-class': bsScreenSize.state == 'lg'}"&gt;&lt;/ANY&gt;
-    &lt;ANY ng-style="{'height': (bsScreenSize.height - 200) + 'px',  'margin-top': (bsScreenSize.state == 'xs')?'0':'10px' }"&gt;&lt;/ANY&gt;
+    &lt;ANY ng-style="{'height': (bsScreenSize.height - 200) + 'px', 'margin-top': (bsScreenSize.state == 'xs')?'0':'10px' }"&gt;&lt;/ANY&gt;
 </pre>
