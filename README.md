@@ -36,6 +36,7 @@ angular
     bsScreenSize.state; // 'xs','sm','md' or 'lg'
     bsScreenSize.width; // 1200
     bsScreenSize.height; // 800
+
     // static functions
     bsScreenSize.isScreenXs(); // bool
     bsScreenSize.isScreenSm(); // bool
