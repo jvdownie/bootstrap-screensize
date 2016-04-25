@@ -20,7 +20,7 @@
         $rootScope.$on('$viewContentLoaded', updateState());
 
         // update state/sizes on window resize
-        angular.element($window).bind('resize', resize());
+        angular.element($window).bind('resize', resize);
 
         // update the $rootScope with the current state and sizes
         function updateState() {
