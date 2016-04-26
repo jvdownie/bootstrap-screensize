@@ -22,11 +22,11 @@
         // update state/sizes on window resize
         angular.element($window).bind('resize', resize);
 
-        // update the $rootScope with the current state and sizes
+        // update the $rootScope/properties with the current state and sizes
         function updateState() {
-            $rootScope.bsScreenSize.state = bsScreenSize.currentState();
-            $rootScope.bsScreenSize.height = bsScreenSize.currentHeight();
-            $rootScope.bsScreenSize.width = bsScreenSize.currentWidth();
+            $rootScope.bsScreenSize.state = bsScreenSize.state = bsScreenSize.currentState();
+            $rootScope.bsScreenSize.height = bsScreenSize.height = bsScreenSize.currentHeight();
+            $rootScope.bsScreenSize.width = bsScreenSize.width = bsScreenSize.currentWidth();
         }
 
         // update state, debounce resize
