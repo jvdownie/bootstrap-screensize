@@ -1,5 +1,5 @@
 # bootstrap-screensize
-Angular v1.X module for screen width/height and Bootstrap's breakpoints.
+Angular v1.x module for screen width/height and Bootstrap's breakpoints.
 <br>
 Updates the properties on screen resize.
 <br>
