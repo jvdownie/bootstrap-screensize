@@ -5,7 +5,7 @@ Updates the properties on screen resize.
 <br>
 Configure the debounce rate for performance requirements.
 <h2>Usage</h2>
-<p>Add bootstrap-screensize to your project:</p>
+<p>Get bootstrap-screensize for your project:</p>
 <pre>bower i bootstrap-screensize --save</pre>
 <p>Add it to your HTML file:</p>
 <pre>
