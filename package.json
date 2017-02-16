@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-screensize",
-  "email": "jld.downie@gmail.com",
-  "version": "1.0.5",
+  "main": "./src/bootstrap-screensize.js",
+  "version": "1.0.6",
   "description": "Angular v1.X module for screen width/height and Bootstrap's breakpoints",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
